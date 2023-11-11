@@ -11,7 +11,6 @@ variable "image" {
 variable "name" {
   description = "Droplet name"
   type        = string
-  default     = ""
 }
 
 variable "region" {
@@ -27,7 +26,7 @@ variable "size" {
 }
 
 variable "monitoring" {
-  description = "Droplet monitors"
+  description = "Droplet monitoring"
   type        = bool
   default     = null
 }

@@ -1,1 +1,1 @@
-# terraform-digitalocean-sshkey
+# terraform-digitalocean-droplet/ssh_key

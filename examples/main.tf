@@ -6,8 +6,10 @@ locals {
     do_token = ""
 }
 
-module "droplet" {
+module "nginx" {
   source = "../"
   count = 1
-  name = "droplet-${count.index+1}"
+  name = "nginx-${count.index+1}"
+  tags = ["web-servers"]
+  user_data = "apt update && apt --assume-yes install nginx -y"
 }
