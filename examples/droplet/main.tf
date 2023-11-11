@@ -7,7 +7,7 @@ locals {
 }
 
 module "nginx" {
-  source = "../"
+  source = "../../"
   count = 1
   name = "nginx-${count.index+1}"
   tags = ["web-servers"]
